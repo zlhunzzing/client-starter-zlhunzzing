@@ -3,18 +3,18 @@ module.exports = {
   plugins: ["@typescript-eslint"],
   extends: [
     "airbnb-base",
-    // 'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    "plugin:react/recommended"
   ],
   rules: {
     quotes: ["error", "single"],
-      "no-unused-vars": 1,
-    //   "import/extensions": [
-    //     "error",
-    //     "ignorePackages",
-    //     { js: "never", jsx: "never", ts: "never", tsx: "never", json: "never" },
-    //   ],
-    // },
-    // settings: {
-    //   "import/resolver": { node: { extensions: [".js", ".jsx", ".ts", ".tsx"] } },
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        { js: "never", jsx: "never", ts: "never", tsx: "never", json: "never" },
+      ],
+    },
+    settings: {
+      "import/resolver": { node: { extensions: [".js", ".jsx", ".ts", ".tsx"] } },
   },
 };
