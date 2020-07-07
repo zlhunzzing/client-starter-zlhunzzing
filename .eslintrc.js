@@ -2,12 +2,13 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
   extends: [
+    "plugin:prettier/recommended",
     "airbnb-base",
+    "plugin:react/recommenxded",
     'plugin:@typescript-eslint/eslint-recommended',
-    "plugin:react/recommended"
+
   ],
   rules: {
-    quotes: ["error", "single"],
       "import/extensions": [
         "error",
         "ignorePackages",

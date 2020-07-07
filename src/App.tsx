@@ -7,9 +7,9 @@ import Main from './pages/Main';
 function App() {
   return (
     <div className="App">
-        <Switch>
-          <Route path="/" render={() => <Main></Main>}></Route>
-        </Switch>
+      <Switch>
+        <Route path="/" render={() => <Main></Main>}></Route>
+      </Switch>
     </div>
   );
 }
